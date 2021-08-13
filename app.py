@@ -37,9 +37,21 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
+    r = 'Never gonna give you up \n', 
+    'Never gonna let you down\n',
+    'Never gonna run around and desert you\n',
+    'Never gonna make you cry\n',
+    'Never gonna say goodbye\n',
+    'Never gonna tell a lie and hurt you'
+
+
+    if msg == 'hi'
+        r = 'yo'
+    elif msg == 'hello'
+        r = 'sup'
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=s))
+        TextSendMessage(text=r))
 
 
 if __name__ == "__main__":
