@@ -37,8 +37,8 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
-    r = ['Never gonna give you up', 'never gonna let you down'
-    ]
+    r = 'Never gonna give you up'
+    
 
     if msg == ['hi', 'Hi']:
         r = 'yo'
