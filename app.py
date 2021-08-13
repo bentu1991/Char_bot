@@ -40,13 +40,13 @@ def handle_message(event):
     r = 'Never gonna give you up'
     
 
-    if msg == ['hi', 'Hi']:
+    if msg in ['hi', 'Hi']:
         r = 'yo'
-    elif msg == ['hello', 'Hello']:
+    elif msg in ['hello', 'Hello']:
         r = 'sup'
-    elif msg == ['who are you', 'Who are you']:
-        r = "i'm your father"
-    elif msg == ['never gonna let you down', 'Never gonna let you down']:
+    elif msg in ['who are you', 'Who are you']:
+        r = 'im your father'
+    elif msg in ['never gonna let you down', 'Never gonna let you down']:
         r = 'Never gonna run around and desert you'
 
 
