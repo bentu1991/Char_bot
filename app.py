@@ -42,9 +42,10 @@ def handle_message(event):
 
     if msg == ['hi', 'Hi']:
         r = 'yo'
-    elif msg == 'hello':
+    elif msg == ['hello', 'Hello']:
         r = 'sup'
-    elif msg ==
+    elif msg == ['who are you', 'Who are you']
+        r = "i'm your father"
 
 
     line_bot_api.reply_message(
