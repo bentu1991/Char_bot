@@ -39,9 +39,9 @@ def handle_message(event):
     msg = event.message.text
     r = 'Never gonna give you up'
 
-    if msg == 'hi'
+    if msg == 'hi':
         r = 'yo'
-    elif msg == 'hello'
+    elif msg == 'hello':
         r = 'sup'
     line_bot_api.reply_message(
         event.reply_token,
