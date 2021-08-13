@@ -44,8 +44,13 @@ def handle_message(event):
         r = 'yo'
     elif msg == ['hello', 'Hello']:
         r = 'sup'
-    elif msg == ['who are you', 'Who are you']
+    elif msg == ['who are you', 'Who are you']:
         r = "i'm your father"
+    elif msg == ['never gonna let you down', 'Never gonna let you down']:
+        r = 'Never gonna run around and desert you'
+
+
+
 
 
     line_bot_api.reply_message(
