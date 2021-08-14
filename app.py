@@ -37,7 +37,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
-    r = 'Never gonna give you up'
+    r = 'say that again? '
     
 
     if msg in ['hi', 'Hi']:
@@ -48,7 +48,9 @@ def handle_message(event):
         r = 'im your father'
     elif msg in ['never gonna let you down', 'Never gonna let you down']:
         r = 'Never gonna run around and desert you'
-
+    elif 'sing' in msg:
+        r = 'Never gonna give you up'
+    
 
 
 
