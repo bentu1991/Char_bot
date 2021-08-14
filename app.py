@@ -38,7 +38,17 @@ def callback():
 def handle_message(event):
     msg = event.message.text
     r = 'say that again? '
-    
+
+    if 'fuck' in msg:
+        sticker_message = StickerSendMessage(
+            package_id='6136',
+            sticker_id='10551377'
+        )
+
+        line_bot_api.reply_message(
+        event.reply_token,
+        sticker_message)
+        return
 
     if msg in ['hi', 'Hi']:
         r = 'yo'
@@ -51,19 +61,7 @@ def handle_message(event):
     elif 'sing' in msg:
         r = 'Never gonna give you up'
     
-    sticker_message = StickerSendMessage(
-    package_id='6136',
-    sticker_id='10551377'
-)
-
-    sticker = sticker_message
-
-
-
-    if 'fuck' in msg:
-        r = sticker
-
-
+    
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=r))
