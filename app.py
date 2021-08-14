@@ -51,8 +51,14 @@ def handle_message(event):
     elif 'sing' in msg:
         r = 'Never gonna give you up'
     
+    sticker_message = StickerSendMessage(
+    package_id='6136',
+    sticker_id='10551377'
+)
 
 
+    if 'fuck' in msg:
+        r = sticker_message
 
 
     line_bot_api.reply_message(
