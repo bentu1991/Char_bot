@@ -56,9 +56,12 @@ def handle_message(event):
     sticker_id='10551377'
 )
 
+    sticker = sticker_message
+
+
 
     if 'fuck' in msg:
-        r = sticker_message
+        r = sticker
 
 
     line_bot_api.reply_message(
